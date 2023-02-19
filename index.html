@@ -5,8 +5,297 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/3628ef7c13.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h1>Hello world!</h1>
+    <header class="header">
+      <nav class="navbar">
+        <a href="#" class="logo">Treloo</a>
+        <div class="nav-items">
+          <a href="#" class="nav-item">Review</a>
+          <a href="#" class="nav-item">Tips</a>
+          <a href="#" class="nav-item">Alerts</a>
+          <a href="#" class="nav-item">Blog</a>
+          <button class="nav-btn">Blog</button>
+        </div>
+      </nav>
+      <article class="header-content">
+        <h1 class="header-title">Discover Your Life, Travel Where You Want</h1>
+        <p class="header-paragraph">
+          Would you explore natur paradise in the world, let’s find the best
+          destination in world with us.
+        </p>
+      </article>
+    </header>
+    <main>
+      <section class="booking-section">
+        <div class="booking-categories">
+          <button class="booking-category-btn active">
+            <i class="fas fa-plane"></i>Flight
+          </button>
+          <button class="booking-category-btn">
+            <i class="fas fa-hotel"></i>Hotel
+          </button>
+        </div>
+        <form class="booking-form">
+          <div class="select-group">
+            <div class="select-wrapper">
+              <label>Leaving from</label>
+              <select>
+                <option>Dubai</option>
+                <option>New York</option>
+                <option>Lviv</option>
+              </select>
+            </div>
+            <div class="fancy-circle">
+              <i class="fas fa-plane"></i>
+            </div>
+            <div class="select-wrapper">
+              <label>Going to</label>
+              <select>
+                <option>Dubai</option>
+                <option>New York</option>
+                <option>Lviv</option>
+              </select>
+            </div>
+          </div>
+          <div class="select-group">
+            <div class="select-wrapper">
+              <label>Leave <i class="fas fa-plane"></i></label>
+              <input type="date" />
+            </div>
+            <div class="fancy-circle">
+              <i class="fas fa-calendar"></i>
+            </div>
+            <div class="select-wrapper">
+              <label>Return<i class="fas fa-plane rotated"></i></label>
+              <input type="date" />
+            </div>
+          </div>
+          <button type="submit" class="search-btn">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+      </section>
+      <section class="offers-section">
+        <h2 class="section-title">Special Upcoming Offers</h2>
+        <div class="offer-categories">
+          <button class="category-button">Team</button>
+          <button class="category-button">Couple</button>
+          <button class="category-button">Family</button>
+        </div>
+        <div class="offers">
+          <div class="offer">
+            <div class="offer-image">
+              <img src="images/offer1.png" alt="view image" />
+              <span class="image-signature">14 FEB 2022</span>
+            </div>
+            <div class="offer-info">
+              <div class="offer-type pink">Relax</div>
+              <div class="offer-length">3 Days, 3 Nights</div>
+              <h4 class="offer-title">Loga Sea</h4>
+              <div class="offer-price">
+                700$<span class="prefix">/Person</span>
+              </div>
+              <button class="offer-btn">Book Now</button>
+            </div>
+          </div>
+          <div class="offer">
+            <div class="offer-image">
+              <img src="images/offer2.png" alt="view image" />
+              <span class="image-signature">18 JUN 2022</span>
+            </div>
+            <div class="offer-info">
+              <div class="offer-type purple">Adventure</div>
+              <div class="offer-length">4 Days, 3 Nights</div>
+              <h4 class="offer-title">Ansgar Scheffold</h4>
+              <div class="offer-price">
+                400$<span class="prefix">/Person</span>
+              </div>
+              <button class="offer-btn">Book Now</button>
+            </div>
+          </div>
+          <div class="offer">
+            <div class="offer-image">
+              <img src="images/offer3.png" alt="view image" />
+              <span class="image-signature">22 DEC 2022</span>
+            </div>
+            <div class="offer-info">
+              <div class="offer-type pink">Relax</div>
+              <div class="offer-length">7 Days, 6 Nights</div>
+              <h4 class="offer-title">Lona X</h4>
+              <div class="offer-price">
+                340$<span class="prefix">/Person</span>
+              </div>
+              <button class="offer-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section">
+        <div class="contact-image-wrapper">
+          <img src="images/contact.png" alt="" />
+          <div class="destination-card image-card">
+            <span>300+</span>
+            DESTINATIONS
+          </div>
+          <div class="tourists-card image-card">
+            <span>5000+</span>
+            TOURISTS
+          </div>
+          <div class="hotels-card image-card">
+            <span>150+</span>
+            HOTELS
+          </div>
+        </div>
+        <article class="contact-article">
+          <h2 class="section-title">Travel Any Corner of The World With Us</h2>
+          <p class="contact-paragraph">
+            Would you explore nature paradise in the world, let’s find the best
+            destination in world with us, Would you explore nature paradise in
+            the world, let’s find the best destination in world with us. Would
+            you explore nature paradise in the world, let’s find the best
+            destination in world with us.
+            <br /><br />
+            Would you explore nature paradise in the world, let’s find the best
+            destination in world with us.
+          </p>
+          <button class="contact-button">Contact Us</button>
+        </article>
+      </section>
+      <section class="recomendation-section">
+        <h2 class="section-title">Recommended destinations</h2>
+        <div class="recomendation-categories">
+          <button class="category-button">Popular</button>
+          <button class="category-button">Adventure</button>
+          <button class="category-button">Beach</button>
+        </div>
+        <div class="recomendation-group">
+          <div class="recomendation">
+            <div class="recomendation-img-wrapper">
+              <img src="images/mountain.png" alt="" />
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <span class="rating-number">4.2</span>
+              </div>
+            </div>
+            <h4 class="recomendation-title">Kina Mountain</h4>
+            <h5 class="recomendation-description">
+              <i class="fas fa-map-marker-alt"></i>Cambodia
+            </h5>
+          </div>
+          <div class="recomendation">
+            <div class="recomendation-img-wrapper">
+              <img src="images/mountain1.png" alt="" />
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <span class="rating-number">4.2</span>
+              </div>
+            </div>
+            <h4 class="recomendation-title">Kina Mountain</h4>
+            <h5 class="recomendation-description">
+              <i class="fas fa-map-marker-alt"></i>Cambodia
+            </h5>
+          </div>
+          <div class="recomendation">
+            <div class="recomendation-img-wrapper">
+              <img src="images/sea.png" alt="" />
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <span class="rating-number">4.2</span>
+              </div>
+            </div>
+            <h4 class="recomendation-title">Kina Mountain</h4>
+            <h5 class="recomendation-description">
+              <i class="fas fa-map-marker-alt"></i>Cambodia
+            </h5>
+          </div>
+          <div class="recomendation">
+            <div class="recomendation-img-wrapper">
+              <img src="images/beach.png" alt="" />
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <span class="rating-number">4.2</span>
+              </div>
+            </div>
+            <h4 class="recomendation-title">Kina Mountain</h4>
+            <h5 class="recomendation-description">
+              <i class="fas fa-map-marker-alt"></i>Cambodia
+            </h5>
+          </div>
+        </div>
+      </section>
+      <section class="feedback-section">
+        <div class="feedback-slider">
+          <div class="feedback-wrapper">
+            <div class="feedback">
+              <p class="feedback-text">
+                Our trip to Morocco was truly a onece in a lifetime experience
+                and we are so grateful to everyone that made it happen
+                seamlessly. Our travel planner, Jaouad, was increadible.
+              </p>
+              <a href="" class="feedback-author">-Vand D</a>
+              <h4 class="feedback-author-status">Happy Treloo</h4>
+            </div>
+            <div class="author-image-wrapper">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <span class="rating-number">4.5</span>
+              </div>
+              <img src="images/person1.png" alt="" class="author-image" />
+            </div>
+          </div>
+          <div class="feedback-wrapper">
+            <div class="feedback">
+              <p class="feedback-text">
+                Our trip to Morocco was truly a onece in a lifetime experience
+                and we are so grateful to everyone that made it happen
+                seamlessly. Our travel planner, Jaouad, was increadible.
+              </p>
+              <a href="" class="feedback-author">-Tru Vio</a>
+              <h4 class="feedback-author-status">Happy Treloo</h4>
+            </div>
+            <div class="author-image-wrapper">
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <span class="rating-number">4.9</span>
+              </div>
+              <img src="images/person2.png" alt="" class="author-image" />
+            </div>
+          </div>
+        </div>
+        <div class="feedback-slider-buttons">
+          <button class="slider-button">
+            <i class="fas fa-angle-left"></i>
+          </button>
+          <button class="slider-button">
+            <i class="fas fa-angle-right"></i>
+          </button>
+        </div>
+      </section>
+      <section class="advert-section">
+        <div class="advert">
+          <h2 class="section-title">
+            Don’t Miss The 50% Discount if You register Today
+          </h2>
+          <button class="register-btn">Register Today</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav class="navbar">
+        <div class="company-info">© 2022 Treloo LLC - All right reserved.</div>
+        <div class="nav-items">
+          <a href="#" class="nav-item">Review</a>
+          <a href="#" class="nav-item">Tips</a>
+          <a href="#" class="nav-item">Alerts</a>
+          <a href="#" class="nav-item">Blog</a>
+        </div>
+      </nav>
+    </footer>
   </body>
 </html>
