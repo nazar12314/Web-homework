@@ -6,13 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/3628ef7c13.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
     <header class="header">
+      <!-- Background-image добавив через css -->
       <nav class="navbar">
         <a href="#" class="logo">Treloo</a>
         <div class="nav-items">
@@ -35,10 +32,10 @@
       <section class="booking-section">
         <div class="booking-categories">
           <button class="booking-category-btn active">
-            <i class="fas fa-plane"></i>Flight
+            <img src="images/rotated-plane.png" alt="" />Flight
           </button>
           <button class="booking-category-btn">
-            <i class="fas fa-hotel"></i>Hotel
+            <img src="images/hotel.png" alt="" />Hotel
           </button>
         </div>
         <form class="booking-form">
@@ -51,8 +48,8 @@
                 <option>Lviv</option>
               </select>
             </div>
-            <div class="fancy-circle">
-              <i class="fas fa-plane"></i>
+            <div class="dashed-circle">
+              <img src="images/grey-plane.png" alt="" />
             </div>
             <div class="select-wrapper">
               <label>Going to</label>
@@ -65,19 +62,21 @@
           </div>
           <div class="select-group">
             <div class="select-wrapper">
-              <label>Leave <i class="fas fa-plane"></i></label>
+              <label>Leave<img src="images/blue-plane.png" alt="" /></label>
               <input type="date" />
             </div>
-            <div class="fancy-circle">
-              <i class="fas fa-calendar"></i>
+            <div class="dashed-circle">
+              <img src="images/calendar.png" alt="" />
             </div>
             <div class="select-wrapper">
-              <label>Return<i class="fas fa-plane rotated"></i></label>
+              <label
+                >Return<img class="rotated" src="images/blue-plane.png" alt=""
+              /></label>
               <input type="date" />
             </div>
           </div>
           <button type="submit" class="search-btn">
-            <i class="fa fa-search"></i>
+            <img src="images/search.png" alt="" />
           </button>
         </form>
       </section>
@@ -96,7 +95,7 @@
             </div>
             <div class="offer-info">
               <div class="offer-type pink">Relax</div>
-              <div class="offer-length">3 Days, 3 Nights</div>
+              <span class="offer-length">3 Days, 3 Nights</span>
               <h4 class="offer-title">Loga Sea</h4>
               <div class="offer-price">
                 700$<span class="prefix">/Person</span>
@@ -111,7 +110,7 @@
             </div>
             <div class="offer-info">
               <div class="offer-type purple">Adventure</div>
-              <div class="offer-length">4 Days, 3 Nights</div>
+              <span class="offer-length">4 Days, 3 Nights</span>
               <h4 class="offer-title">Ansgar Scheffold</h4>
               <div class="offer-price">
                 400$<span class="prefix">/Person</span>
@@ -126,7 +125,7 @@
             </div>
             <div class="offer-info">
               <div class="offer-type pink">Relax</div>
-              <div class="offer-length">7 Days, 6 Nights</div>
+              <span class="offer-length">7 Days, 6 Nights</span>
               <h4 class="offer-title">Lona X</h4>
               <div class="offer-price">
                 340$<span class="prefix">/Person</span>
@@ -179,57 +178,59 @@
             <div class="recomendation-img-wrapper">
               <img src="images/mountain.png" alt="" />
               <div class="rating">
-                <i class="fas fa-star"></i>
+                <img src="images/star.png" alt="" />
                 <span class="rating-number">4.2</span>
               </div>
             </div>
             <h4 class="recomendation-title">Kina Mountain</h4>
-            <h5 class="recomendation-description">
-              <i class="fas fa-map-marker-alt"></i>Cambodia
-            </h5>
+            <span class="recomendation-description">
+              <img src="images/Location.png" alt="" />Cambodia
+            </span>
           </div>
           <div class="recomendation">
             <div class="recomendation-img-wrapper">
               <img src="images/mountain1.png" alt="" />
               <div class="rating">
-                <i class="fas fa-star"></i>
+                <img src="images/star.png" alt="" />
                 <span class="rating-number">4.2</span>
               </div>
             </div>
             <h4 class="recomendation-title">Kina Mountain</h4>
-            <h5 class="recomendation-description">
-              <i class="fas fa-map-marker-alt"></i>Cambodia
-            </h5>
+            <span class="recomendation-description">
+              <img src="images/Location.png" alt="" />Cambodia
+            </span>
           </div>
           <div class="recomendation">
             <div class="recomendation-img-wrapper">
               <img src="images/sea.png" alt="" />
               <div class="rating">
-                <i class="fas fa-star"></i>
+                <img src="images/star.png" alt="" />
                 <span class="rating-number">4.2</span>
               </div>
             </div>
             <h4 class="recomendation-title">Kina Mountain</h4>
-            <h5 class="recomendation-description">
-              <i class="fas fa-map-marker-alt"></i>Cambodia
-            </h5>
+            <span class="recomendation-description">
+              <img src="images/Location.png" alt="" />Cambodia
+            </span>
           </div>
           <div class="recomendation">
             <div class="recomendation-img-wrapper">
               <img src="images/beach.png" alt="" />
               <div class="rating">
-                <i class="fas fa-star"></i>
+                <img src="images/star.png" alt="" />
                 <span class="rating-number">4.2</span>
               </div>
             </div>
             <h4 class="recomendation-title">Kina Mountain</h4>
-            <h5 class="recomendation-description">
-              <i class="fas fa-map-marker-alt"></i>Cambodia
-            </h5>
+            <span class="recomendation-description">
+              <img src="images/Location.png" alt="" />Cambodia
+            </span>
           </div>
         </div>
       </section>
       <section class="feedback-section">
+        <!-- Для кожного елемента "feedback",
+          картинку лапків які присутні в дизайні я додав через bacground-image -->
         <div class="feedback-slider">
           <div class="feedback-wrapper">
             <div class="feedback">
@@ -243,7 +244,7 @@
             </div>
             <div class="author-image-wrapper">
               <div class="rating">
-                <i class="fas fa-star"></i>
+                <img src="images/star.png" alt="" />
                 <span class="rating-number">4.5</span>
               </div>
               <img src="images/person1.png" alt="" class="author-image" />
@@ -261,7 +262,7 @@
             </div>
             <div class="author-image-wrapper">
               <div class="rating">
-                <i class="fas fa-star"></i>
+                <img src="images/star.png" alt="" />
                 <span class="rating-number">4.9</span>
               </div>
               <img src="images/person2.png" alt="" class="author-image" />
@@ -270,14 +271,15 @@
         </div>
         <div class="feedback-slider-buttons">
           <button class="slider-button">
-            <i class="fas fa-angle-left"></i>
+            <img src="images/arrow.png" alt="" />
           </button>
           <button class="slider-button">
-            <i class="fas fa-angle-right"></i>
+            <img src="images/arrow.png" alt="" class="rotated" />
           </button>
         </div>
       </section>
       <section class="advert-section">
+        <!-- Картинку для банера я також добавив через backgroung-image -->
         <div class="advert">
           <h2 class="section-title">
             Don’t Miss The 50% Discount if You register Today

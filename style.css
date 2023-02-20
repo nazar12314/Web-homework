@@ -169,7 +169,7 @@ select {
   align-items: center;
 }
 
-.fancy-circle {
+.dashed-circle {
   display: flex;
   border: 1px dashed #999999;
   border-radius: 50%;
@@ -178,10 +178,6 @@ select {
   width: 40px;
   height: 40px;
   margin: 0 1.875em;
-}
-
-.fancy-circle .fas {
-  color: #999999;
 }
 
 .select-wrapper label {
@@ -619,4 +615,10 @@ label .fa-plane {
 
 .footer .nav-item {
   color: rgba(0, 0, 0, 0.75);
+}
+
+.feedback {
+  background-image: url("images/quote.png");
+  background-repeat: no-repeat;
+  background-position: 50% 10%;
 }
