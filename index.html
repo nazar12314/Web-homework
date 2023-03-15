@@ -6,29 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/3628ef7c13.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header class="header">
-      <!-- Background-image добавив через css -->
-      <nav class="navbar">
-        <a href="#" class="logo">Treloo</a>
-        <div class="nav-items">
-          <a href="#" class="nav-item">Review</a>
-          <a href="#" class="nav-item">Tips</a>
-          <a href="#" class="nav-item">Alerts</a>
-          <a href="#" class="nav-item">Blog</a>
-          <button class="nav-btn">Blog</button>
-        </div>
-      </nav>
-      <article class="header-content">
-        <h1 class="header-title">Discover Your Life, Travel Where You Want</h1>
-        <p class="header-paragraph">
+    <img class="background-image" src="images/header.png" alt="" />
+    <nav class="navbar">
+      <a href="#" class="logo">Treloo</a>
+      <div class="nav-items">
+        <a href="#" class="nav-item">Review</a>
+        <a href="#" class="nav-item">Tips</a>
+        <a href="#" class="nav-item">Alerts</a>
+        <a href="#" class="nav-item">Blog</a>
+        <button class="nav-btn">Sign in</button>
+      </div>
+      <i id="burger-btn" class="fas fa-bars"></i>
+    </nav>
+    <main>
+      <section class="banner-section">
+        <!-- <article class="header-content"> -->
+        <h1 class="banner-title">Discover Your Life, Travel Where You Want</h1>
+        <p class="banner-paragraph">
           Would you explore natur paradise in the world, let’s find the best
           destination in world with us.
         </p>
-      </article>
-    </header>
-    <main>
+        <!-- </article> -->
+      </section>
       <section class="booking-section">
         <div class="booking-categories">
           <button class="booking-category-btn active">
@@ -46,6 +51,7 @@
                 <option>Dubai</option>
                 <option>New York</option>
                 <option>Lviv</option>
+                <option>Drohobych</option>
               </select>
             </div>
             <div class="dashed-circle">
@@ -57,6 +63,7 @@
                 <option>Dubai</option>
                 <option>New York</option>
                 <option>Lviv</option>
+                <option>Drohobych</option>
               </select>
             </div>
           </div>
@@ -86,7 +93,7 @@
       <section class="offers-section">
         <h2 class="section-title">Special Upcoming Offers</h2>
         <div class="offer-categories">
-          <button class="category-button">Team</button>
+          <button class="category-button active">Team</button>
           <button class="category-button">Couple</button>
           <button class="category-button">Family</button>
         </div>
@@ -172,7 +179,7 @@
       <section class="recomendation-section">
         <h2 class="section-title">Recommended destinations</h2>
         <div class="recomendation-categories">
-          <button class="category-button">Popular</button>
+          <button class="category-button active">Popular</button>
           <button class="category-button">Adventure</button>
           <button class="category-button">Beach</button>
         </div>
@@ -185,10 +192,12 @@
                 <span class="rating-number">4.2</span>
               </div>
             </div>
-            <h4 class="recomendation-title">Kina Mountain</h4>
-            <span class="recomendation-description">
-              <img src="images/Location.png" alt="Geolocation icon" />Cambodia
-            </span>
+            <div class="recomendation-content">
+              <h4 class="recomendation-title">Kina Mountain</h4>
+              <span class="recomendation-description">
+                <img src="images/Location.png" alt="Geolocation icon" />Cambodia
+              </span>
+            </div>
           </div>
           <div class="recomendation">
             <div class="recomendation-img-wrapper">
@@ -198,10 +207,12 @@
                 <span class="rating-number">4.2</span>
               </div>
             </div>
-            <h4 class="recomendation-title">Kina Mountain</h4>
-            <span class="recomendation-description">
-              <img src="images/Location.png" alt="Geolocation icon" />Cambodia
-            </span>
+            <div class="recomendation-content">
+              <h4 class="recomendation-title">Kina Mountain</h4>
+              <span class="recomendation-description">
+                <img src="images/Location.png" alt="Geolocation icon" />Cambodia
+              </span>
+            </div>
           </div>
           <div class="recomendation">
             <div class="recomendation-img-wrapper">
@@ -211,10 +222,12 @@
                 <span class="rating-number">4.2</span>
               </div>
             </div>
-            <h4 class="recomendation-title">Kina Mountain</h4>
-            <span class="recomendation-description">
-              <img src="images/Location.png" alt="Geolocation icon" />Cambodia
-            </span>
+            <div class="recomendation-content">
+              <h4 class="recomendation-title">Kina Mountain</h4>
+              <span class="recomendation-description">
+                <img src="images/Location.png" alt="Geolocation icon" />Cambodia
+              </span>
+            </div>
           </div>
           <div class="recomendation">
             <div class="recomendation-img-wrapper">
@@ -224,10 +237,12 @@
                 <span class="rating-number">4.2</span>
               </div>
             </div>
-            <h4 class="recomendation-title">Kina Mountain</h4>
-            <span class="recomendation-description">
-              <img src="images/Location.png" alt="Geolocation icon" />Cambodia
-            </span>
+            <div class="recomendation-content">
+              <h4 class="recomendation-title">Kina Mountain</h4>
+              <span class="recomendation-description">
+                <img src="images/Location.png" alt="Geolocation icon" />Cambodia
+              </span>
+            </div>
           </div>
         </div>
       </section>
@@ -292,6 +307,7 @@
       <section class="advert-section">
         <!-- Картинку для банера я також добавив через backgroung-image -->
         <div class="advert">
+          <img class="advert-img" src="images/advert.png" alt="" />
           <h2 class="section-title">
             Don’t Miss The 50% Discount if You register Today
           </h2>
@@ -300,15 +316,14 @@
       </section>
     </main>
     <footer class="footer">
-      <nav class="navbar">
-        <div class="company-info">© 2022 Treloo LLC - All right reserved.</div>
-        <div class="nav-items">
-          <a href="#" class="nav-item">Review</a>
-          <a href="#" class="nav-item">Tips</a>
-          <a href="#" class="nav-item">Alerts</a>
-          <a href="#" class="nav-item">Blog</a>
-        </div>
-      </nav>
+      <div class="company-info">© 2022 Treloo LLC - All right reserved.</div>
+      <div class="nav-items">
+        <a href="#" class="nav-item">Review</a>
+        <a href="#" class="nav-item">Tips</a>
+        <a href="#" class="nav-item">Alerts</a>
+        <a href="#" class="nav-item">Blog</a>
+      </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
